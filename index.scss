@@ -1,11 +1,36 @@
 @import "styles/defaults/colors";
 @import "styles/components/header";
 @import "styles/components/footer";
+@import "styles/components/utils";
 
-body {
-    margin: 0;
+main {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #2B2E4A;
 }
 
 .hero {
     margin: 0;
+    font-size: 48px;
+}
+
+.info {
+    font-size: 20px;
+    width: 40vh;
+    margin: 8px;
+}
+
+.about-btn {
+    width: 23vh;
+    height: 7vh;
+    background-color: #2B2E4A;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    margin-top: 16px;
+    font-weight: 600;
 }

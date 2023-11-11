@@ -4,11 +4,13 @@
 }
 
 header {
-    height: 4rem;
+    height: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 1.5rem;
+    box-shadow: 0px -8px 20px 0px rgba(0,0,0,0.75);
+    z-index: 1;
 }
 
 li {
@@ -17,7 +19,6 @@ li {
 
 a {
     text-decoration: none;
-    color: white;
 }
 
 .logo {
@@ -53,7 +54,7 @@ a {
 .nav-menu {
     position: fixed;
     left: -100%;
-    top: 4rem;
+    top: 4.7rem;
     width: 100%;
     gap: 0;
     flex-direction: column;
@@ -68,4 +69,45 @@ a {
 
 .nav-menu.active {
     left: 0;
+}
+
+.nav-link {
+    color: white;
+    font-size: 18px;
+}
+
+@media (min-width:1000px) {
+    .hamburger {
+        display: none;
+    }
+
+    .nav-link {
+        color: #2B2E4A;
+        font-size: 24px;
+    }
+
+    .logo {
+        font-size: 48px;
+        margin-left: 20px;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        background: transparent;
+        top: 0px;
+        right: 0px;
+        gap: 32px;
+        transition: none;
+    }
+
+    .nav-bar {
+        position: relative;
+        left: 225px;
+    }
+
+    header {
+        height: 7rem;
+    }
 }
