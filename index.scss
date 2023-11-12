@@ -16,6 +16,7 @@ main {
 .hero {
     margin: 0;
     font-size: 48px;
+    font-weight: 600;
 }
 
 .info {
@@ -30,7 +31,31 @@ main {
     background-color: #2B2E4A;
     border: none;
     border-radius: 5px;
-    color: #ffffff;
     margin-top: 16px;
-    font-weight: 600;
+
+    .about-btn-text {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 600;
+    }
+}
+
+@media (min-width:700px) {
+    .hero {
+        font-size: 64px;
+    }
+
+    .info {
+        font-size: 28px;
+        width: 60vh;
+    }
+
+    .about-btn {
+        width: 225px;
+        height: 64px;
+        margin-top: 28px;
+        .about-btn-text {
+            font-size: 18px;
+        }
+    }
 }
