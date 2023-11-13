@@ -3,16 +3,6 @@
 @import "styles/components/footer";
 @import "styles/components/utils";
 
-main {
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #2B2E4A;
-}
-
 .hero {
     margin: 0;
     font-size: 48px;
@@ -21,7 +11,7 @@ main {
 
 .info {
     font-size: 20px;
-    width: 40vh;
+    width: 60vw;
     margin: 8px;
 }
 

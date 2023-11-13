@@ -1,0 +1,59 @@
+@import "../defaults/colors";
+@import "../components/header";
+@import "../components/footer";
+@import "../components/utils";
+
+img {
+    width: 175px;
+    height: auto;
+    margin: 16px 0 8px;
+}
+
+a {
+    text-decoration: none;
+    color: #2B2E4A;
+}
+
+.container {
+    margin: 16px;
+}
+
+.blog-post {
+    width: 272px;
+    height: 230px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-title {
+    font-size: 18px;
+}
+
+.blog-description {
+    width: 230px;
+}
+
+@media (min-width:700px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width:1000px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .container {
+        margin: 8px;
+    }
+}

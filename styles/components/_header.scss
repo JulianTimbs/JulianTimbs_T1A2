@@ -4,6 +4,9 @@
 }
 
 header {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
     height: 5rem;
     display: flex;
     align-items: center;
@@ -55,7 +58,7 @@ a {
 .nav-menu {
     position: fixed;
     left: -100%;
-    top: 4.7rem;
+    top: 5rem;
     width: 100%;
     gap: 0;
     flex-direction: column;
@@ -99,17 +102,12 @@ a {
         position: relative;
         background: transparent;
         top: 0px;
-        right: 0px;
         gap: 32px;
         transition: none;
-    }
-
-    .nav-bar {
-        position: relative;
-        left: 225px;
+        left: 0;
     }
 
     header {
-        height: 7rem;
+        height: 6rem;
     }
 }
