@@ -1,0 +1,91 @@
+@import "../defaults/colors";
+@import "../components/header";
+@import "../components/footer";
+@import "../components/utils";
+
+*{
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 38px;
+    margin-top: 24px;
+}
+
+p {
+    font-size: 20px;
+    width: 292px;
+    margin: 16px;
+}
+
+.contact-card {
+    background-color: #fff;
+    color: #2B2E4A;
+    font-size: 20px;
+    width: 80vw;
+    height: 52vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 20px;
+    margin-bottom: 28px;
+
+    input,
+    textarea {
+        background-color: #d9d9d9;
+        border: none;
+        border-radius: 5px;
+        padding: 8px;
+        width: 70vw;
+        height: 20vh;
+    }
+
+    input:not(.submit-btn) {
+        width: 70vw;
+        height: 3vh;
+    }
+
+    .submit-btn {
+        align-self: center;
+        width: 150px;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        background-color: #2B2E4A;
+        color: #fff;
+        margin-top: 24px;
+        font-weight: 600;
+    }
+
+    label:not(.fullname) {
+        margin-top: 16px;
+    }
+}
+
+@media (min-width:700px) {
+    p {
+        width: 450px;
+    }
+
+    .contact-card {
+        input:not(.submit-btn) {
+            width: 74vw;
+        }
+        textarea {
+            width: 74vw;
+        }
+    }
+}
+
+@media (min-width:1000px) {
+    .contact-card {
+        width: 40vw;
+        
+        input:not(.submit-btn) {
+            width: 37vw;
+        }
+        textarea {
+            width: 37vw;
+        }
+    }
+}
