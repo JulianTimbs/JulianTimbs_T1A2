@@ -4,8 +4,8 @@
 @import "../components/utils";
 
 img {
-    width: 175px;
-    height: auto;
+    width: 45vw;
+    height: 15vh;
     margin: 16px 0 8px;
 }
 
@@ -19,8 +19,8 @@ a {
 }
 
 .blog-post {
-    width: 272px;
-    height: 230px;
+    width: 55vw;
+    height: 30vh;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -30,10 +30,11 @@ a {
 
 .blog-title {
     font-size: 18px;
+    text-decoration: underline;
 }
 
 .blog-description {
-    width: 230px;
+    width: 45vw;
 }
 
 @media (min-width:700px) {
@@ -47,6 +48,21 @@ a {
         justify-content: center;
         align-items: center;
     }
+
+    img {
+        width: 25vw;
+        height: 12vh;
+        margin: 8px 0;
+    }
+
+    .blog-post {
+        width: 30vw;
+        height: 26vh;
+    }
+
+    .blog-description {
+        width: 25vw;
+    }
 }
 
 @media (min-width:1000px) {
@@ -55,5 +71,18 @@ a {
     }
     .container {
         margin: 8px;
+    }
+    img {
+        width: 20vw;
+        height: 15vh;
+    }
+
+    .blog-post {
+        width: 25vw;
+        height: 30vh;
+    }
+
+    .blog-description {
+        width: 20vw;
     }
 }

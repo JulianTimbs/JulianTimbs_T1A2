@@ -1,0 +1,39 @@
+@import "../../defaults/colors";
+@import "../../components/header";
+@import "../../components/footer";
+@import "../../components/utils";
+
+.blog-image {
+    width: 75vw;
+    margin: 1.5rem;
+}
+
+.blog-title {
+    text-decoration: underline;
+    margin: 1rem;
+}
+
+.blog-content {
+    width: 80vw;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width:700px) {
+    .blog-image {
+        width: 60vw;
+    }
+}
+
+@media (min-width:1000px) {
+    .blog-image {
+        width: 30vw;
+        margin: 1rem;
+    }
+
+    .blog-content {
+        width: 50vw;
+        font-size: 1.2rem;
+        margin-bottom: 4rem;
+    }
+}
