@@ -16,7 +16,7 @@
 .blog-content {
     width: 80vw;
     font-size: 1.1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 @media (min-width:700px) {
@@ -34,6 +34,10 @@
     .blog-content {
         width: 50vw;
         font-size: 1.2rem;
-        margin-bottom: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .publish-date {
+        margin-bottom: 3rem;
     }
 }
