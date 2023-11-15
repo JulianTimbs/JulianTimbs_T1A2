@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title tag includes the title for the HTML which is displayed in the browser tab -->
     <title>Portfolio - Home</title>
+    <!-- Fa Fonts linked so that the social media icons can be used -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Link to the CSS stylesheet for styling -->
     <link rel="stylesheet" href="index.css">
+    <!-- Link to desired favicon -->
     <link rel="icon" type="image/x-icon" href="./images/JT.png">
 </head>
 <body>
+    <!-- Header tag used for header which includes the navigation bar this stays constant across website -->
     <header>
+        <!-- Logo which includes a link back to the homepage -->
         <a href="index.html" class="logo">JT</a>
         <nav class="nav-bar">
+            <!-- Nav menu with links for all the main parts of the page -->
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a class="nav-link" href="./pages/about.html">About</a>
@@ -23,6 +30,7 @@
                     <a class="nav-link" href="./pages/contact.html">Contact</a>
                 </li>    
             </ul>
+            <!-- Spans for the hamburger menu -->
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -30,21 +38,30 @@
             </div>    
         </nav>
     </header>
+    <!-- Main tag used for the section of website for the main content this tag is used consistently across website with content inside changing as needed -->
+    <!-- Content is stacked on top of each other so no need for a container div as there is no need for flexbox or grid to style as desired -->
     <main>
+        <!-- H1 tag used for title of page -->
         <h1 class="hero">Hey, I'm Julian Timbs</h1>
+        <!-- P tag used for main info for homepage -->
         <p class="info">I'm an aspiring web developer with experience in HTML & CSS and plans on developing skills in Javascript and Python</p>
+        <!-- Button tag used for the link to the about page for visitors to learn more about me -->
         <button class="about-btn">
             <a href="./pages/about.html" class="about-btn-text">About Me</a> 
         </button>
     </main>
+    <!-- Footer tag used for the footer which contains links to professional socials and email -->
     <footer>
+        <!-- Icons are wrapped in a container class .icons so they can be placed above email, this stays consistent across website -->
         <div class="icons">
             <a href="https://www.linkedin.com/in/julian-timbs-7b37951b1/" class="fa fa-linkedin"></a>
             <a href="https://github.com/JulianTimbs" class="fa fa-github"></a>
         </div>    
+        <!-- Email is a link to the contact page -->
         <a href="./pages/contact.html" class="email">timbsjulian@gmail.com</a>
     </footer>
 
+    <!-- Javascript linked at the bottom of page as the hamburger menu does not work with the  file linked before the hamburger menu HTML-->
     <script src="./main.js" type="text/javascript"></script>
 </body>
 </html>

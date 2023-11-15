@@ -1,8 +1,14 @@
+// styling for footer to be imported to page styling
+// default margin and padding to be removed
 * {
     margin: 0;
     padding: 0;
 }
 
+// footer dimensions set
+// flexbox used to have social icons beside each other but stacked on email
+// box shadow has been used to add a border to the footer
+// box shadow dimensions are recessed and a large blur used to provide a subtle shadow effect
 footer {
     height: 5rem;
     display: flex;
@@ -15,12 +21,15 @@ footer {
 
 }
 
+// email styling
+// text decoration set to none and colour set as is a link to another page
 .email {
     text-decoration: none;
     font-size: 18px;
     color: #2B2E4A;
 }
 
+// styling for social media icons
 .icons {
     display: flex;
     gap: 16px;
@@ -30,10 +39,12 @@ footer {
     margin-bottom: 6px;
 }
 
+// setting the color for the social media icons as is a link
 .fa {
     color: #2B2E4A;
 }
 
+// styling for desktop widths only as tablet and mobile styling are the same
 @media (min-width:1000px) {
     footer {
         height: 5rem;

@@ -1,26 +1,35 @@
+// see index.scss for comments on import tags
 @import "../defaults/colors";
 @import "../components/header";
 @import "../components/footer";
 @import "../components/utils";
 
-*{
+// border box used for styling the contact card as dimensions are desired to be inclusive of padding and border
+* {
     box-sizing: border-box;
 }
+
+// styling for heading of page
 h1 {
-    font-size: 38px;
+    font-size: 2.5rem;
     margin-top: 24px;
 }
 
+// styling for page information
+// width of information set with static units of measurement as information would be too thin with larger screens
 p {
-    font-size: 20px;
+    font-size: 1.25rem;
     width: 292px;
     margin: 16px;
 }
 
+// contact card styling
+// flexbox is with column to organise components
+// items are aligned left->right with align-items:flex-start
 .contact-card {
     background-color: #fff;
     color: #2B2E4A;
-    font-size: 20px;
+    font-size: 1.25rem;
     width: 80vw;
     height: 45vh;
     border-radius: 10px;
@@ -30,6 +39,7 @@ p {
     padding: 24px 20px;
     margin-bottom: 28px;
 
+    // styling for input areas for name, email and message areas
     input,
     textarea {
         background-color: #d9d9d9;
@@ -40,11 +50,12 @@ p {
         height: 20vh;
     }
 
+    // styling for name and email input area height as the submit button is considered an input tag it has been omitted with :not() pseudo-class
     input:not(.submit-btn) {
-        width: 70vw;
         height: 3vh;
     }
 
+    // styling for submit button
     .submit-btn {
         align-self: center;
         width: 150px;
@@ -57,11 +68,13 @@ p {
         font-weight: 600;
     }
 
+    // setting margin for areas :not() pseudo-class used as no margin-top is desired for name section
     label:not(.fullname) {
-        margin-top: 16px;
+        margin-top: 1rem;
     }
 }
 
+// styling for tablets
 @media (min-width:700px) {
     p {
         width: 450px;
@@ -77,6 +90,7 @@ p {
     }
 }
 
+// styling for desktops
 @media (min-width:1000px) {
     .contact-card {
         width: 40vw;

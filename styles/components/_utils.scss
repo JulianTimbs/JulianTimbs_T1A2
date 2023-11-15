@@ -1,16 +1,25 @@
+// utility styling
+// tbh not entirely sure what need to go in here
+// Set a font family with backups depending on the browser being used
 * {
     font-family:'Times New Roman', Times, serif;
 }
 
+// body styling
+// flexbox used so header and footer are at the top and bottom of the page
+// min-height:100vh is set to by default page takes up entire viewport at minimum
 body {
     min-height: 100vh;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+// default main styling
+// flex grow: 1 used so that main occupies entire area from header to footer
+// flexbox column and centre aligned content so that content is by default in the centre of page
+// text is centre aligned by default
+// default font colour is blue consistent across website
 main {
     flex-grow: 1;
     display: flex;

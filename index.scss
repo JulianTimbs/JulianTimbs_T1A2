@@ -1,32 +1,48 @@
+// Imported external components to be used for colors, fonts, header and footer styles. This stays consistent throughout stylesheets
 @import "styles/defaults/colors";
 @import "styles/components/header";
 @import "styles/components/footer";
 @import "styles/components/utils";
 
+// All styling throughout website has been done with a mobile-first approach with styling for wider screens done with breakpoints through media queries
+
+// Styling for the title of page
+// Includes resetting margin as H1 tag has default margin, setting font size in responsive units of measurement
+// Font-weight has not been applied as the default H1 boldness is desired
+// font size has been set with pixels as the desired font size is consistent across mobile screen sizes
 .hero {
     margin: 0;
-    font-size: 48px;
-    font-weight: 600;
+    font-size: 3rem;
 }
 
-a {
-    cursor: pointer;
-}
-
+// Styling for text below the title text for the page
+// width has been set with vw as desired width will change with screen width
+// margin has been set to distance from title text and button
+// font size has been set with pixels as the desired font size is consistent across mobile screen sizes
 .info {
-    font-size: 20px;
+    font-size: 1.25rem;
     width: 60vw;
     margin: 8px;
 }
 
+// Button styling
+// width and height have been set with static units of measurement as the same button size is desired across screen sizes
+// margin top has been set to distance button from text above
+// default button border has been removed
+// border radius set to round corners of button
+// Button colour is set to default blue used throughout the site
 .about-btn {
-    width: 23vh;
-    height: 7vh;
+    width: 190px;
+    height: 50px;
     background-color: #2B2E4A;
     border: none;
     border-radius: 5px;
     margin-top: 16px;
 
+    // text styling for link to about page
+    // text decoration set to none to remove default link styling
+    // colour set to white to provide contrast to blue button
+    // text has been bolded to make text more readable
     .about-btn-text {
         text-decoration: none;
         color: #ffffff;
@@ -34,16 +50,24 @@ a {
     }
 }
 
+// styling for tablets and desktop as during development styles for desktop and tablet were suitable
 @media (min-width:700px) {
+    // font size set larger for bigger screens with remainder of styling being inherited from mobile styling above
     .hero {
-        font-size: 64px;
+        font-size: 4.5rem;
     }
 
+    // width of text set with responsive units of measurements to accommodate various screen sizes
+    // bigger font size set for bigger screens
+    // uses inherited styles
     .info {
-        font-size: 28px;
+        font-size: 1.8rem;
         width: 60vh;
     }
 
+    // button dimensions have been increased for bigger screen sizes
+    // button margin has been increased for a bigger gap on bigger screen sizes
+    // font size increased
     .about-btn {
         width: 225px;
         height: 64px;

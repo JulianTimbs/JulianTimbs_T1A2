@@ -1,8 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+// styling for header to be imported to pages
 
+// styling for header item including dimensions
+// position sticky used so that the header is always visible when scrolling
+// flexbox used to position items at opposite ends of header
+// box shadow has been used to add a border to the footer
+// box shadow dimensions are recessed and a large blur used to provide a subtle shadow effect
 header {
     position: sticky;
     top: 0;
@@ -16,6 +18,7 @@ header {
     z-index: 1;
 }
 
+// styling for nav bar links
 li {
     list-style: none;
 }
@@ -24,6 +27,7 @@ a {
     text-decoration: none;
 }
 
+// styling for logo on left side of header
 .logo {
     font-size: 2rem;
     text-decoration: none;
@@ -31,6 +35,8 @@ a {
     font-weight: 600;
 }
 
+// styling for hamburger menu
+// transition has been set for animation of hamburger menu changing to 'x' when pressed
 .bar {
     display: block;
     width: 25px;
@@ -40,14 +46,12 @@ a {
     background-color: #2B2E4A;
 }
 
-.hamburger {
-    display: block;
-}
-
+// styling for middle bar when pressed disappears for top and bottom bar can rotate to become an 'x'
 .hamburger.active .bar:nth-child(2) {
     opacity: 0;
 }
 
+// styling for top and bottom hamburger bars to rotate to become an 'x' translateY property used so that bars meet evenly, if not used the 'x' is not even
 .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
@@ -55,6 +59,9 @@ a {
     transform: translateY(-8px) rotate(-45deg);
 }
 
+// styling for nav menu which slides in when hamburger menu is pressed
+// transition is set for speed that menu slides in
+// position set to left 100% so that before menu is pressed the menu is not visible
 .nav-menu {
     position: fixed;
     left: -100%;
@@ -67,12 +74,9 @@ a {
     background-color: #2B2E4A;
 }
 
+// styling for nav menu options
 .nav-item{
     margin: 24px 0;
-}
-
-.nav-menu.active {
-    left: 0;
 }
 
 .nav-link {
@@ -80,22 +84,35 @@ a {
     font-size: 18px;
 }
 
+// .active is applied through JS 
+// left set to 0 so that menu is visible after hamburger menu is pressed
+.nav-menu.active {
+    left: 0;
+}
+
+// styling for desktop and tablet screen widths
 @media (min-width:700px) {
+    // hamburger display is set to none so that it is not visible on wider screens
     .hamburger {
         display: none;
     }
 
+    // nav link styling set with static unit of measurement so is consistent with varying screen widths
     .nav-link {
         color: #2B2E4A;
         font-size: 24px;
     }
 
+    // Logo styling
     .logo {
         font-size: 48px;
         margin-left: 20px;
         font-weight: 600;
     }
 
+    // styling to position nav menu in right side of the header
+    // background set to transparent as previously background was set to blue
+    // transition set to none because when changing screen widths there is an animation for changing positions of mav menu
     .nav-menu {
         display: flex;
         flex-direction: row;

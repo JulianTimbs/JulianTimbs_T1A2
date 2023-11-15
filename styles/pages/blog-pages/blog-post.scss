@@ -1,30 +1,37 @@
+// see index.scss for comments on import tags
 @import "../../defaults/colors";
 @import "../../components/header";
 @import "../../components/footer";
 @import "../../components/utils";
 
+// blog image set with responsive units of measurement
 .blog-image {
     width: 75vw;
     margin: 1.5rem;
 }
 
+// styling for blog title
+// underline blog title for reader clarity
 .blog-title {
     text-decoration: underline;
     margin: 1rem;
 }
 
+// blog content width set with responsive units of measurement
 .blog-content {
     width: 80vw;
     font-size: 1.1rem;
     margin-bottom: 1rem;
 }
 
+// tablet styling
 @media (min-width:700px) {
     .blog-image {
         width: 60vw;
     }
 }
 
+// desktop styling
 @media (min-width:1000px) {
     .blog-image {
         width: 30vw;
