@@ -25,7 +25,7 @@ a {
 // flexbox has been used for styling for ease of centreing of all items in blog post card
 .blog-post {
     width: 70vw;
-    height: 32vh;
+    height: 35vh;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -53,6 +53,7 @@ a {
         display: grid;
         grid-template-columns: 1fr 1fr;
         place-items: center;
+        padding: 16px;
     }
 
     img {
@@ -63,7 +64,7 @@ a {
 
     .blog-post {
         width: 30vw;
-        height: 28vh;
+        height: 35vh;
     }
 
     .blog-description {
@@ -92,7 +93,7 @@ a {
 
     .blog-post {
         width: 25vw;
-        height: 33vh;
+        height: 35vh;
     }
 
     // styling for placement of individual blog posts
